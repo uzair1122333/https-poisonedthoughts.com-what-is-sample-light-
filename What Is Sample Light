@@ -1,0 +1,20 @@
+# https-poisonedthoughts.com-what-is-sample-light-
+What Is Sample Light ?Sampling lights are one of the types of lights used in sampling techniques. An integrator can control the test light. There are three different types of test lights.
+
+The word may confuse you, but don’t worry, we have all the answers to your question here! So what are rehearsal lights? In light sampling, “sampling light” refers to the light source or illumination source that is measured. Its meaning is very clear from the phrase itself. Part of the light. When rendering videos, we use light sampling.
+
+Although evenly spaced sampling over the surface is acceptable, it is preferable not to collect data from locations on the sphere that are hidden (eg, those on the back of the sphere when viewed from the point).
+
+Instead, sampling involves taking a representative sample in each direction over the entire solid angle surrounding the sphere, starting at the reference point. Then it determines the point on the sphere that corresponds to the sensed direction.
+
+How do I control Sample Light?
+
+The PRMan is designed to make the light sampling procedure as simple and straightforward as possible when used in “RIS” mode. The integrator largely ensures an even distribution of the test lamps. The two primary on-board integrators, “PxrVCM” and “PxrPathTracer”, have slightly different interfaces for generating sample illumination for the integrator.
+
+The lighting system in RIS is usually managed by the integrator using a single sample count requested by the integrator.
+
+If the ray tree intersects itself, the integrator has a parameter ‘numLightSamples’ which is reduced to a specific number of samples.
+
+Samples are usually distributed automatically by the system according to this budget.
+
+On the other hand, automatic synchronization may be undesirable in some situations.

@@ -1,1 +1,0 @@
-# https-poisonedthoughts.com-what-is-sample-light-
